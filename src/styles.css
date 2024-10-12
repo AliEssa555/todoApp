@@ -15,7 +15,10 @@ body {
     height: auto;
     margin: 0 10px;                /* Add some margin between images */
 }
-  
+img{
+  width: 500px;
+  height: 500px;
+}
 .home-image {
   width: 500px;
   height: auto;
@@ -23,6 +26,7 @@ body {
 
 .slideshow-container{
   max-width: 1000px;
+  max-height: 500px;
   position: relative;
   margin: auto;
 }
