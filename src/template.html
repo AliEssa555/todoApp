@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +8,53 @@
 </head>
 <body>
     <header>
-        <nav>
-            <button class="nav-btn">Home</button>
-            <button class="nav-btn">Menu</button>
-            <button class="nav-btn">Locations</button>
-            <button class="nav-btn">About</button>
-        </nav>
+        Welcome User
     </header>
     <div id="content">
-        <div class="container1">
-            <img src="./images/lemon.jpg" style="width: 500px; height: auto;">
+            <button id="make-list">Create To Do List</button>
+            <button id="make-project">Create a New Project</button>
+            <button id="showTodos">Show/Hide All To Do Item in Selected Project</button><br><br>
 
-        </div>
     </div>
+    <div id="content2">
+        <form id="list-form">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description" required><br><br>
+
+            <label for="due-date">Due Date</label>
+            <input type="date" id="due-date" name="due-date" required><br><br>
+
+            <label for="priority">Priority</label>
+            <input type="text" id="priority" name="priority" required><br><br>
+        </form>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1/3</div>
+            <img src="./images/order.png" style="width: 100%">
+            <div class="text">Order</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2/3</div>
+            <img src="./images/multan.png" style="width: 100%">
+            <div class="text">Multan</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">1/3</div>
+            <img src="./images/lahore.png" style="width: 100%">
+            <div class="text">Lahore</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+    </div>
+<br>
+<div style="text-align: center;">
+    <span class="dot" onclick="currenSlide(1)"></span>
+    <span class="dot" onclick="currenSlide(2)"></span>
+    <span class="dot" onclick="currenSlide(3)"></span>
+</div>
 </body>
 </html>
