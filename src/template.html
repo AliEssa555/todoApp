@@ -28,7 +28,27 @@
             <input type="date" id="due-date" name="due-date" required><br><br>
 
             <label for="priority">Priority</label>
-            <input type="text" id="priority" name="priority" required><br><br>
+            <input type="text" id="priority" name="priority" required 
+            minlength="3"
+            maxlength="6"
+            pattern="[Hh]igh|[Mm]edium|[Ll]ow"><br><br>
+            <fieldset>
+                <legend>
+                  Is The Task Done?<span aria-label="required">*</span>
+                </legend>
+                <!-- While only one radio button in a same-named group can be selected at a time,
+                     and therefore only one radio button in a same-named group having the "required"
+                     attribute suffices in making a selection a requirement -->
+                <input type="radio" required name="driver" id="r1" value="yes" /><label
+                  for="r1"
+                  >Yes</label
+                >
+                <input type="radio" required name="driver" id="r2" value="no" /><label
+                  for="r2"
+                  >No</label
+                >
+              </fieldset>
+            
         </form>
     </div>
     <div class="slideshow-container">

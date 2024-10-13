@@ -10,6 +10,27 @@ body {
 #list-form{
   display: none;
 }
+fieldset {
+  width: 100%;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+input:valid{
+  border: 2px solid black;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+
+input:invalid{
+  border: 2px dashed red;
+}
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
 .location-image {
     width: 100px;
     height: auto;

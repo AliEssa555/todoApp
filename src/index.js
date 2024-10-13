@@ -108,7 +108,7 @@ makeTodoButton.addEventListener("click",()=>{
         //localStorage.setItem("defaultproject", JSON.stringify(defaultProject));
         //console.log(JSON.parse(localStorage.getItem("defaultproject"))); // "[object Object]"; not useful!
         //console.log(defaultProject.getToDoList().length);
-        contentElement.removeChild(submitToDoButton);
+        //contentElement.appendChild(submitToDoButton);
         document.getElementById("list-form").style.display="none";
         document.getElementById("list-form").reset();
     });
